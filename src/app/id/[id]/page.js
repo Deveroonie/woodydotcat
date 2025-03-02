@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WoodyByID() {
     const params = useParams()
@@ -34,14 +35,14 @@ export default function WoodyByID() {
         return (
             <div>
               <div className="p-8">
-                <h1 className="text-4xl font-bold text-white">Woody by ID</h1>
-                <Image src={res.Image}  width={512} height={512} alt={"woody number " + id} title="woody" className="border border-white border-x-4 border-y-4"/>
+                <h1 className="text-3xl font-bold text-white">Woody By ID</h1>
+                <img src={res.Image} alt={"woody number " + id} width={750} height={500} title="woody" className="border border-white border-x-4 border-y-4 lg:float-right"/>
                 <p className="text-white">
-                  This Woody (ID): {id}<br />
-                  <a href="/">Random Woody</a>
+                  This Woody (ID): {id}<br /><br/>
+                  <Link href="/" className="cursor-pointer text-orange-500 hover:underline">Random Woody</Link>
                   <br /><br />
-                  <a href={"https://purr.woody.cat/" + id}>Woody REST API (this Woody)</a><br />
-                  <a href="https://purr.woody.cat/">Woody REST API (random Woody)</a>
+                  <a href={"https://purr.woody.cat/" + id} className="text-orange-500 hover:underline">Woody REST API (this Woody)</a><br />
+                  <a href="https://purr.woody.cat/" className="text-orange-500 hover:underline">Woody REST API (random Woody)</a>
                 </p>
               </div>
             </div>
