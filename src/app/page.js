@@ -3,6 +3,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import AffiliatePlacement from "./AffiliatePlacement";
 export default function Home() {
   const [res, setRes] = useState([]);
   useEffect(() => {

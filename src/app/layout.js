@@ -2,8 +2,10 @@ export const metadata = {
   title: 'woody',
   description: 'woody the little terro- cutie pie',
 }
+import Script from "next/script";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
+import AffiliatePlacement from "./AffiliatePlacement";
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
@@ -14,11 +16,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-gray-800 2xl:flex 2xl:flex-col 2xl:items-center">
         <div className="2xl:w-[60%]">
-        <p className="text-lg text-white">Interested in setting up your own website? Check out <a href="https://regery.com/en?pr=hmuhlyc" className="text-orange-500">Regery</a>, with domains starting at just £6 for .cat, and as low as £9 for .com! Domains also include free DNS, as well as WHOIS privacy! <span className="text-xs italic text-gray-500">affiliate link</span></p>
+        <AffiliatePlacement />
         {children}
         </div>
+        <AffiliatePlacement />
         <Analytics />
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f55ea00841c04ae394cf33069bca66e0"}'></script>
+        <Script src="/loadaff.js"/>
         </body>
     </html>
   )

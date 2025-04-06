@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.disclaimer-aff {
+    font-size: xx-small;
+    color: rgb(107 114 128);
+    font-style: italic;
+}
+
+.link-aff {
+    color: rgb(249 115 22);
+}
