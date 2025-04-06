@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-gray-800 2xl:flex 2xl:flex-col 2xl:items-center">
         <div className="2xl:w-[60%]">
+        <p className="text-lg text-white">Interested in setting up your own website? Check out <a href="https://regery.com/en?pr=hmuhlyc" className="text-orange-500">Regery</a>, with domains starting at just £6 for .cat, and as low as £9 for .com! <span className="text-xs italic text-gray-500">affiliate link</span></p>
         {children}
         </div>
         <Analytics />

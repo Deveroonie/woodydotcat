@@ -34,7 +34,7 @@ export default function WoodyByID() {
     } else {
         return (
             <div>
-              <div className="p-8">
+              <div className="px-8">
                 <h1 className="text-3xl font-bold text-white">Woody By ID</h1>
                 <img src={res.Image} alt={"woody number " + id} width={750} height={500} title="woody" className="border border-white border-x-4 border-y-4 lg:float-right"/>
                 <p className="text-white">
