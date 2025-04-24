@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import AffiliatePlacement2 from "@/app/AffiliatePlacementIG";
+import AffiliatePlacement from "@/app/AffiliatePlacement";
 
 export default function WoodyByID() {
     const params = useParams()
@@ -38,13 +39,14 @@ export default function WoodyByID() {
               <div className="px-8">
                 <h1 className="text-3xl font-bold text-white">Woody By ID</h1>
                 <img src={res.Image} alt={"woody number " + id} width={750} height={500} title="woody" className="border border-white border-x-4 border-y-4 lg:float-right"/>
-                <p className="text-white">
+                <div className="text-white">
                   This Woody (ID): {id}<br /><br/>
                   <Link href="/" className="cursor-pointer text-orange-500 hover:underline">Random Woody</Link>
                   <AffiliatePlacement2 />
+                  <AffiliatePlacement />
                   <a href={"https://purr.woody.cat/" + id} className="text-orange-500 hover:underline">Woody REST API (this Woody)</a><br />
                   <a href="https://purr.woody.cat/" className="text-orange-500 hover:underline">Woody REST API (random Woody)</a>
-                </p>
+                </div>
               </div>
             </div>
           );

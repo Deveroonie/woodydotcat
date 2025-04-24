@@ -27,14 +27,15 @@ export default function Home() {
       <div className="px-8">
         <h1 className="text-3xl font-bold text-white">Random Woody</h1>
         <img src={res.Image} alt={"woody number " + res.ID} width={750} height={500} title="woody" className="border border-white border-x-4 border-y-4 lg:float-right"/>
-        <p className="text-white">
+        <div className="text-white">
           This Woody (ID): {res.ID}<br /><br/>
           <a onClick={loadNew} className="cursor-pointer text-orange-500 hover:underline">New Woody</a><br />
           <Link href={"/id/" + res.ID} className="text-orange-500 hover:underline">This Woody (permalink)</Link>
           <AffiliatePlacement2 />
+          <AffiliatePlacement />
           <a href={"https://purr.woody.cat/" + res.ID} className="text-orange-500 hover:underline">Woody REST API (this Woody)</a><br />
           <a href="https://purr.woody.cat/" className="text-orange-500 hover:underline">Woody REST API (random Woody)</a>
-        </p>
+        </div>
       </div>
     </div>
   );

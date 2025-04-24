@@ -6,6 +6,7 @@ import Script from "next/script";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import AffiliatePlacement from "./AffiliatePlacement";
+import AffiliatePlacement3 from "./AffiliatePlacementRegery";
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
@@ -20,12 +21,15 @@ export default function RootLayout({ children }) {
         {children}
         </div>
         <AffiliatePlacement />
-        <a href="https://regery.com/en?pr=hmuhlyc">
-            <img src="/domains2.png" />
-        </a>
-        <Analytics />
+        <div className="fixed bottom-0 w-full">
+          <img src="/domains1.gif" />
+        </div>
+        <div className="mb-24">
+          <AffiliatePlacement3/>  
+        </div>        <Analytics />
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f55ea00841c04ae394cf33069bca66e0"}'></script>
         <Script src="/loadaff.js"/>
+
         </body>
     </html>
   )
