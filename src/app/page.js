@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import AffiliatePlacement from "./AffiliatePlacement";
+import AffiliatePlacement2 from "./AffiliatePlacementIG";
 export default function Home() {
   const [res, setRes] = useState([]);
   useEffect(() => {
@@ -30,7 +31,7 @@ export default function Home() {
           This Woody (ID): {res.ID}<br /><br/>
           <a onClick={loadNew} className="cursor-pointer text-orange-500 hover:underline">New Woody</a><br />
           <Link href={"/id/" + res.ID} className="text-orange-500 hover:underline">This Woody (permalink)</Link>
-          <br /><br />
+          <AffiliatePlacement2 />
           <a href={"https://purr.woody.cat/" + res.ID} className="text-orange-500 hover:underline">Woody REST API (this Woody)</a><br />
           <a href="https://purr.woody.cat/" className="text-orange-500 hover:underline">Woody REST API (random Woody)</a>
         </p>
