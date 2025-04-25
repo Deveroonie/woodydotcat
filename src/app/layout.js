@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
         </div>
         <AffiliatePlacement />
         <div className="fixed bottom-0 w-full">
+        <a href="https://regery.com/en?pr=hmuhlyc">
           <img src="/domains1.gif" />
+</a>
         </div>
         <div className="mb-24">
           <AffiliatePlacement3/>  
