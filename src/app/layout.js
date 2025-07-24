@@ -22,8 +22,7 @@ export default function RootLayout({ children }) {
         </div>
         <AffiliatePlacement />
         </div>
-        <div className="mb-24">
-        </div>        <Analytics />
+        <Analytics />
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f55ea00841c04ae394cf33069bca66e0"}'></script>
         <Script src="/loadaff.js"/>
 
