@@ -21,13 +21,8 @@ export default function RootLayout({ children }) {
         {children}
         </div>
         <AffiliatePlacement />
-        <div className="fixed bottom-0 w-full">
-        <a href="https://regery.com/en?pr=hmuhlyc">
-          <img src="/domains1.gif" />
-</a>
         </div>
         <div className="mb-24">
-          <AffiliatePlacement3/>  
         </div>        <Analytics />
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f55ea00841c04ae394cf33069bca66e0"}'></script>
         <Script src="/loadaff.js"/>
